@@ -1,0 +1,142 @@
+{
+	"info": {
+		"name": "mybatis-plus-demo",
+		"_postman_id": "f49de99a-efc5-6400-4567-6ee8606ec460",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test-insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"zzc\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "test-getbyexample",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/test/getByExample?id=65cb852716e045e87e22cab9138d3c3b&name=zzc&startCreateTime=2019-11-14%2015:11:37&endCreateTime=2019-11-14%2015:11:37",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"getByExample"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "65cb852716e045e87e22cab9138d3c3b",
+							"equals": true
+						},
+						{
+							"key": "name",
+							"value": "zzc",
+							"equals": true
+						},
+						{
+							"key": "startCreateTime",
+							"value": "2019-11-14%2015:11:37",
+							"equals": true
+						},
+						{
+							"key": "endCreateTime",
+							"value": "2019-11-14%2015:11:37",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "test-insertSelective",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"zzc\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/insertSelective",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"insertSelective"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "test1---insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"testId\": \"770ac1d092745a249a9d22030ea59e0f\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/test1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
