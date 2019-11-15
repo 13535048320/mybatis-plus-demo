@@ -110,6 +110,8 @@ public class Generator {
                 .setRestControllerStyle(true)
                 // Controller继承BaseController
                 .setSuperControllerClass("com.example.mybatisplusdemo.modules.system.controller.BaseController")
+                // 去除数据库前缀字段
+                //.setTablePrefix("ansible_api_")
                 // 自动填充字段
                 .setTableFillList(tableFillList);
 
